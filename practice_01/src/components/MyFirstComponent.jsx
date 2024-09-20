@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 
 const MyFirstComponent = () => {
 
@@ -11,7 +11,7 @@ const MyFirstComponent = () => {
 
   return (
     <>
-    <div className="container bg-primary ">
+    <div className="container">
     <div className='m-2'>
         My FirstComponent
     </div>
@@ -24,7 +24,7 @@ const MyFirstComponent = () => {
     </ul>
     </div>
 
-    <div className="container bg-success py-2 ">
+    <div className="container">
     <h1>Datos del Docente</h1>
     <p>nombre <strong>{ name }</strong> </p>
     <p>GitHub <strong>{ github_profile }</strong> </p>
@@ -41,7 +41,7 @@ const MyFirstComponent = () => {
  
     
     <div>
-    <h1>Objeto Completo</h1>
+    <h3>Objeto Completo</h3>
      <pre>{JSON.stringify(student)}</pre>
     </div>
 
