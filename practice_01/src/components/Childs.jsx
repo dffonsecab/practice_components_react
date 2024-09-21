@@ -1,14 +1,25 @@
+
 import PropTypes from "prop-types"
 
 
 
 const Childs= (props) => {
 
-  let nom=props.nombres;
+  const handleChangeName=()=>{
+  
+    const newName=prompt("Ingresa un nuevo nombre")
+    if(newName!="")
+      props.SetName(newName);
+  
+  }
 
   return (
     <div>
-        {nom}
+
+        <p>Nombre Actual: {props.nombre}</p>
+        <button className="btn btn-primary" 
+        onClick={handleChangeName}>
+        Cambiar Nombre</button>
     </div>
   )
 }
@@ -16,7 +27,7 @@ const Childs= (props) => {
 export default Childs
 
 Childs.propTypes={
-
-  nombres: PropTypes.string
+  SetName: PropTypes.func,
+  nombre: PropTypes.string
  
 }
